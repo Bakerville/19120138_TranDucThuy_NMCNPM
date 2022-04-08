@@ -7,4 +7,11 @@ urlpatterns = [
     path("update_order/<str:pk>", views.updateOrder, name="update_order"),
     path("customers/<str:pk_test>/", views.customer, name="customers"),
     path("delete_order/<str:pk>/", views.deleteOrder, name="delete_order"),
+
+    path('account/', views.accountSettings, name='account'),
+
+    path('register/', views.registerPage, name="register"),
+	path('login/', views.loginPage, name="login"),
+    path('user/', views.userPage,name='user_page'),
+    path('logout/', views.logoutUser, name="logout"),
 ]
